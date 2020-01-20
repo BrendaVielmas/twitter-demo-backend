@@ -46,10 +46,6 @@ let withMongoose = (next) => {
   }
 }
 
-/*app.get('/', (req, res)=>{
-  res.send("Hola")
-})*/
-
 app.get('/api/products', withMongoose(productsFunctions.getProducts))
 app.get('/api/products/:productId', withMongoose(productsFunctions.getProductId))
 app.post('/api/products', withMongoose(productsFunctions.postProduct))

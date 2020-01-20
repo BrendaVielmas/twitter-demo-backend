@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "mockingoose": "^2.13.2",
-    "nodemon": "^1.19.2"
+    "nodemon": "^1.19.4"
   },
   "jest": {
     "testEnvironment": "node"

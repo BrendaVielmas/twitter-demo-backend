@@ -20,12 +20,16 @@ module.exports.getProductId = (req, res) => {
     res.status(200).send({ products })
   })
 };
-
 module.exports.postProduct = (req, res) => {
-  console.log('POST /api/products')
-  console.log(req.body)
+  console.log('POST /api/products');
+  console.log(req.body);
 
-  let product = new Product(req.body)
+  let product = new Product()
+  product.name = req.body.name
+  product.price = req.body.price
+  product.category = req.body.price
+  product.kinds = req.body.kinds
+  product.uuid = req.body.uuid
 
   product.save((err, productStored) => {
     if (err) res.status(500).send({ message: `Error while saving in database: ${err}` })
