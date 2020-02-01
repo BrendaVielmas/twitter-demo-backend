@@ -1,5 +1,5 @@
 {
-  "name": "gdl003-burger-queen-back-end",
+  "name": "twitter-demo-backend",
   "version": "1.0.0",
   "description": "## 1. Preámbulo",
   "engines": {
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/karina2004liz/GDL003-Burger-Queen-Back-End.git"
+    "url": ""
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/karina2004liz/GDL003-Burger-Queen-Back-End/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/karina2004liz/GDL003-Burger-Queen-Back-End#readme",
+  "homepage": "",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "bcryptjs": "^2.4.3",
