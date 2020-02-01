@@ -10,4 +10,4 @@ let T = new Twit({
   strictSSL:            true,     // optional - requires SSL certificates to be valid.
 })
 
-export default T;
+module.exports.T=T;
