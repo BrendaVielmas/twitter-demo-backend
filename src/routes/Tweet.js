@@ -13,7 +13,13 @@ let T = new Twit({
 module.exports.getTweetsByScreenName = (req, res) => {
   let screenName = req.params.screenName;
   let lastId = req.query.last_id;
-  T.get('statuses/user_timeline', { screen_name: screenName, count: 10, last_id: lastId}, (err, data, response) => {
+  let props = { screen_name: screenName, count: 10};
+  
+  if (lastId) {
+    props.max_id = lastId;
+  }
+
+  T.get('statuses/user_timeline', props, (err, data, response) => {
     res.status(200).send(data);
   });
 };
